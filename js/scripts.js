@@ -8,10 +8,7 @@ loginForm.addEventListener("submit", function (event) {
   const username = loginForm.username.value.trim();
   const password = loginForm.password.value.trim();
 
-  if (
-    (username === "carla" && password === "123") ||
-    (username === "diego" && password === "456")
-  ) {
+  if ((username === "alumno" && password === "123")) {
     loginError.classList.add("d-none");
 
 
@@ -29,7 +26,7 @@ function mostrarUsuario(username) {
   userStatus.innerHTML = `
   <div class="dropdown">
     <button class="btn  dropdown-toggle fw-bold" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#52a425; color:white;">
-      Bienvenide ${username}!
+      Bienvenido ${username}!
     </button>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
       <li><a class="dropdown-item" href="alumno.html">Tus Talleres</a></li>
