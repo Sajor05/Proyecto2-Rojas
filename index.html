@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Unahur TIC 2025</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary gap-2">
+    
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">
+        <img src="multimedia/logo.png" alt="Logo UnaHUR" width="200px" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+             <!--------------------------------------------------
+              -- N A V  D R O P D O W N  S O M O S U N A H U R --
+              --------------------------------------------------->
+
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SomosUnahur
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">SomosUnahur</a></li>
+                    <li><a class="dropdown-item" href="#">Autoridades</a></li>
+                    <li><a class="dropdown-item" href="#">Consejo Superior</a></li>
+                    <li><a class="dropdown-item" href="#">Acceso a la información <br>pública y transparencia</a></li>
+                    <li><a class="dropdown-item" href="#">Planteamiento y <br>Evaluación</a></li>
+                    <li><a class="dropdown-item" href="#">Elecciones UNAHUR</a></li>
+                    <li><a class="dropdown-item" href="#">Libros UNAHUR</a></li>
+                    <li><a class="dropdown-item" href="#">Cómo llegar</a></li>
+                </ul>
+             </li>
+
+             <!----------------------------------------------
+              -- N A V  D R O P D O W N  E N S E Ñ A N Z A --
+              ----------------------------------------------->
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Enseñanza
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+
+             <!----------------------------------------------
+              -- N A V  D R O P D O W N  E X T E N S I O N --
+              ----------------------------------------------->
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Extensión
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+
+             <!------------------------------------------------------------------
+              -- N A V  D R O P D O W N  C I E N C I A  Y  T E C N O L O G I A --
+              ------------------------------------------------------------------->
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ciencia y Tecnología
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+
+             <!----------------------------------------------------
+              -- N A V  D R O P D O W N  L A B O R A T O R I O S --
+              ----------------------------------------------------->
+
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Laboratorios
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+
+             <!-----------------------------------------------------------------------------------
+              -- N A V  D R O P D O W N  I N S T A L A C I O N E S  E X P E R I M E N T A L E S --
+              ------------------------------------------------------------------------------------>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    instalaciones Experimentales
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div id="userStatus">
+          <button id="loginBtn" class="btn" style="background-color: #52a425; color: white" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <b>Iniciar Sesión</b>
+          </button>
+        </div>
+
+          <!----------------------------------
+          -- I N I C I O  D E L  M O D A L --
+          ----------------------------------->
+
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form id="loginForm">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="username" class="form-label">Usuario</label>
+                      <input type="text" class="form-control" id="username" name="username" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="password" name="password" required />
+                    </div>
+                    <div id="loginError" class="text-danger d-none">Usuario o contraseña inválidos.</div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary fw-bold" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn fw-bold" style="background-color: #52a425; color: white;">Entrar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!--------------------------------
+            -- F I N A L  D E L  M O D A L --
+            --------------------------------->
+      
+      </div>
+    </div>
+  </nav>
+
+
+  
+  <main class="container my-4">
+    <div class="row">
+      
+      <div class="col-lg-8">
+        <section class="p-4">
+          <h1 class="fw-bold mb-4">Unahur da comienzo al evento Tic 4</h1>
+          <p class="fst-italic"><span style="color: green;">Julio 13 2025</span> | 2025, Instituto de Tecnología e Ingeniería, Unahur</p>
+          <img class="img-fluid p-4" src="multimedia/evento.jpg" alt="Foto del evento"/>
+
+          <h3 class="mb-3 mt-2 text-justify"><b>¡Llega la cuarta edición del UnahurTic 2025!</b></h3>
+          <p class="text-justify">
+            Por cuarto año consecutivo, la Universidad Nacional de Hurlingham (UNAHUR) será sede del UNAHUR@TIC,
+            un encuentro abierto para la actualización y el intercambio en el campo de las Tecnologías de la
+            Información y la Comunicación (TIC). La cita es el sábado 30 de noviembre, a partir de las 9:00 hs.
+          </p>
+          <p class="text-justify">
+            “Cuando hablamos de TIC, incluimos informática, redes sociales, programación, sistemas,
+            inteligencia artificial y videojuegos. Todas estas áreas están vinculadas con nuestra oferta académica”,
+            explica Fernando Puricelli, director de las carreras de Licenciatura en Informática, Tecnicaturas
+            en Programación, Videojuegos, Inteligencia Artificial y Redes y Operaciones Informáticas.
+          </p>
+          <p class="text-justify">
+            Estas jornadas se organizan en tres grandes ejes: participación de estudiantes y docentes,
+            innovación tecnológica y complementariedad entre investigación y formación.
+          </p>
+        </section>
+
+        <section class="p-4">
+          <h3 class="mb-3 text-justify"><b>¿Qué actividades habrá?</b></h3>
+
+          <h6 class="mb-2 text-justify"><b>1er Bloque</b></h6>
+          <p class="text-justify">
+            Docentes, estudiantes y graduados expondrán proyectos de investigación con fuerte componente tecnológico.
+            El público podrá conocer trabajos sobre sistemas embebidos con Circuit Python, ciberseguridad y migración
+            de aplicaciones de desarrollo a producción.
+          </p>
+
+          <h6 class="mb-2 text-justify"><b>2do Bloque</b></h6>
+          <p class="text-justify">
+            Se presentarán experiencias concretas de programación como el Portal de Empleos UNAHUR y una app para la
+            reserva de tickets de eventos. Además, Florencia Cornara dará una charla sobre Inteligencia Artificial Generativa.
+          </p>
+
+          <h6 class="mb-2 text-justify"><b>3er Bloque</b></h6>
+          <p class="text-justify">
+            Contará con invitados externos vinculados a tecnologías emergentes y experiencias inmersivas. El artista
+            3D Cristian Villazón mostrará su proceso de trabajo desde el diseño en 3D hasta la realidad extendida,
+            incluyendo uno de sus últimos proyectos aún en desarrollo. También participará Mercedes Grazzini,
+            diseñadora de videojuegos e ilustradora, quien hablará sobre los desafíos del diseño en el videojuego
+            argentino Storyteller, disponible en la plataforma de Netflix.
+          </p>
+
+          <section class="container my-5">
+            <h2 class="mb-4 fw-bold">Galería de imágenes</h2>
+            <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="multimedia/charla1.jpeg" class="img-fluid rounded" alt="Charla de introduccion" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="multimedia/clases.jpg" class="img-fluid rounded" alt="Clases de programación" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="multimedia/anuncios.jpg" class="img-fluid rounded" alt="Anuncios de talleres y charlas" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="multimedia/clases2.jpg" class="img-fluid rounded" alt="Clases de IA" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="multimedia/charla2.jpg" class="img-fluid rounded" alt="charla informativa" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="multimedia/inauguracion_del_evento.jpg" class="img-fluid rounded" alt="Inauguracion del evento" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="multimedia/gafas.jpg" class="img-fluid rounded" alt="Gafas RV" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="multimedia/muestra1.jpg" class="img-fluid rounded" alt="Muestra de proyectos" />
+            </div>
+                </div>
+          </section>
+          <h2 class="mb-3 fw-bold border-bottom border-dark">Te invitamos a venir a la Unahur!</h2>
+          <video controls class="rounded">
+            <source src="multimedia/unahurInstitucional.mp4" type="video/mp4">
+          </video>
+        </section>
+
+      </div>
+
+      
+      <aside class="col-lg-4 border-start ps-4">
+        <h5 class="fw-bold mb-4">ÚLTIMAS NOTICIAS</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3 pb-3 border-bottom">
+            <a href="#" class="text-decoration-none text-secondary fst-italic fw-bold">
+              Preinscripción a cursos de Posgrado del segundo cuatrimestre
+            </a>
+          </li>
+          <li class="mb-3 pb-3 border-bottom">
+            <a href="#" class="text-decoration-none text-secondary fst-italic fw-bold">
+              Declaración CIN. Universidades: Sin soluciones del gobierno, peligra el segundo cuatrimestre
+            </a>
+          </li>
+          <li class="mb-3 pb-3 border-bottom">
+            <a href="#" class="text-decoration-none text-secondary fst-italic fw-bold">
+              La UNAHUR celebró su Asamblea Universitaria 2025
+            </a>
+          </li>
+          <li class="mb-3 pb-3 border-bottom">
+            <a href="#" class="text-decoration-none text-secondary fst-italic fw-bold">
+              Puesta en valor del Centro de Simulación Clínica “Dra. Cecilia Grierson”
+            </a>
+          </li>
+          <li>
+            <a href="#" class=" text-decoration-none text-secondary fst-italic fw-bold">
+              Encuentro con estudiantes e investigadores que participan en programas de intercambio internacional 2025
+            </a>
+          </li>
+        </ul>
+        
+        <div class="border-bottom border-dark"></div>
+
+        <h5 class="mt-4 mb-4"><b>Los mas vistos</b></h5>
+        <ul class="list-unstyled">
+          <li class="mb-3 pb-3 border-bottom">
+            <a href="#" class="text-decoration-none text-dark">
+                <p class="text-secondary fst-italic">2024, Destacada portada-home, Institucional, Instituto de Biotecnología, Instituto de Educación, 
+                Instituto de Salud Comunitaria, Instituto de Tecnología e Ingeniería</p>
+                Pre-inscripción a carreras para el primer cuatrimestre 2025</a>
+          </li>
+          <li class="mb-3 pb-3 border-bottom">
+            <a href="#" class="text-decoration-none text-dark">
+                <p class="text-secondary fst-italic">2023, Sec. de Investigación, Sec. Investigación.</p>
+                Kéfir: qué es y cuáles son los beneficios de consumirlo #CienciaUniversitaria
+            </a>
+          </li>
+          <li class="mb-3 pb-3 border-bottom">
+            <a href="#" class="text-decoration-none text-dark">
+                <p class="text-secondary fst-italic">2024, Instituto de Biotecnología, Instituto de Educación, Instituto de Salud Comunitaria, 
+                Instituto de Tecnología e Ingeniería, Sec. Académica, Unahur</p>
+                INICIA EL PRIMER CUATRIMESTRE 2024
+            </a>
+          </li>
+          <li class="mb-3 pb-3 border-bottom">
+            <a href="#" class="text-decoration-none text-dark">
+                <p class="text-secondary fst-italic">2022, Sec. Académica</p>
+                ¿Cuándo y dónde curso? – Inicio CPU y materias verano
+            </a>
+          </li>
+          <li>
+            <a href="#" class=" text-decoration-none text-dark">
+                <p class="text-secondary fst-italic">2023, Ingreso 2021, Ingreso 2022, Institucional, Instituto de Biotecnología, Instituto de Educación, Instituto de Salud Comunitaria, 
+                Instituto de Tecnología e Ingeniería, Sec. Académica, Unahur</p>
+                Comienza la inscripción a carreras para el primer cuatrimestre 2024
+            </a>
+          </li>
+        </ul>
+        <div class="border-bottom border-dark"></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer style="background-color: #52a425;" class="py-3 text-center">
+    <div class="footer-linea mb-3" style="height:4px;"></div>
+    <div class="d-flex justify-content-center" style="gap: 2rem;">
+      <p class="fw-bold">Alumno: Fabrizio Rojas</p>
+      <a href="#" title="Facebook" class="text-white fs-3 text-decoration-none">📘</a>
+      <a href="#" title="WhatsApp" class="text-white fs-3 text-decoration-none">💬</a>
+      <a href="#" title="Instagram" class="text-white fs-3 text-decoration-none">📷</a>
+    </div>
+  </footer>
+
+
+  <script src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
